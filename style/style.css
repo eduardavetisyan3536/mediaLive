@@ -1,0 +1,586 @@
+@import url(./reset.css);
+
+body {
+  background-color: #eeeeee;
+}
+
+.container {
+  background-color: #222831;
+}
+
+nav {
+  background-color: #222831;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  box-shadow: 1px 0 30px #00adb5;
+}
+
+.lNav {
+  width: 49%;
+}
+
+.logo {
+  color: #00adb5;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.rNav {
+  width: 49%;
+  padding: 10px;
+}
+
+.rNav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rNav ul li a {
+  color: #eeeeee;
+  font-size: 20px;
+  font-weight: 900px;
+}
+
+/*                                                      HOME */
+.home {
+  color: #393e46;
+  display: flex;
+  width: 1140px;
+  justify-content: space-around;
+  background-color: #00adb5;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+/*                                            FLEX */
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*                                          SLIDER */
+.fName {
+  color: white;
+  font-size: 25px;
+  text-shadow: 0 0 10px #00adb5;
+  position: absolute;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  top: 30px;
+}
+
+.slidBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #393e46;
+  height: 800px;
+  box-shadow: 0 0 20px black;
+  position: relative;
+}
+
+.slider {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+  position: relative;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 800px;
+  height: 500px;
+}
+
+/*                              manual slider */
+.navigation-manual {
+  position: absolute;
+  width: 800px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #00adb5;
+}
+
+#radio1:checked~.first {
+  margin-left: 0;
+}
+
+#radio2:checked~.first {
+  margin-left: -20%;
+}
+
+#radio3:checked~.first {
+  margin-left: -40%;
+}
+
+#radio4:checked~.first {
+  margin-left: -60%;
+}
+
+/*                                                      TABLE */
+
+.back-table {
+  width: 1140px;
+  background-color: #393e46;
+  display: flex;
+  height: 550px;
+  overflow: hidden;
+  box-shadow: 0 0 20px black;
+  z-index: 2;
+}
+
+.lTable {
+  width: 49%;
+  box-shadow: 3px 2px 10px black;
+}
+
+.lTable img {
+  height: 550px;
+}
+
+.rTable {
+  width: 49%;
+  padding: 20px;
+  position: relative;
+}
+
+.rTable .click {
+  padding: 10px 20px;
+  background-color: #00adb5;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 0 5px black;
+}
+
+.click-div {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+}
+
+.cont {
+  position: absolute;
+  width: 500px;
+  height: 450px;
+  background-color: #eeeeee;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+.cont p a {
+  text-decoration: underline;
+  color: #00adb5;
+}
+
+/*                                              CONSTRUCTOR */
+
+.constructor {
+  width: 1140px;
+  height: 600px;
+  background-color: #393e46;
+  padding: 40px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 0 20px black;
+}
+
+.lConst {
+  width: 49%;
+  background-color: #eeeeee;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px 0 0 40px;
+  box-shadow: 0 0 30px black;
+  z-index: 1;
+}
+
+.variable {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  background-color: #393e46;
+  color: #eeeeee;
+  display: flex;
+  align-items: center;
+  border-radius: 40px 5px 80px 10px;
+  box-shadow: 2px 3px 10px black;
+}
+
+.rConst {
+  width: 49%;
+  background-color: #00adb5;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0 40px 40px 0;
+  box-shadow: 0 0 30px black;
+}
+
+.constProp {
+  padding: 10px;
+}
+
+.constProp p {
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.constProp input {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+
+
+
+
+
+/*                                                        1024px MEDIA */
+
+
+
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 900px;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+
+  .back-table {
+    max-width: 900px;
+  }
+
+  .click-div {
+    width: 400px;
+    font-size: 12px;
+  }
+
+  .cont {
+    width: 400px;
+    font-size: 12px;
+  }
+
+  .constructor {
+    max-width: 900px;
+    font-size: 12px;
+  }
+
+  .rConst {
+    gap: 0;
+    font-size: 10px;
+  }
+
+  .constProp {
+    padding: 0;
+  }
+
+  .constProp input {
+    padding: 5px 5px;
+  }
+
+  .constProp p {
+    padding-bottom: 5px;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  .rNav ul li a {
+    font-size: 15px;
+  }
+
+  .fName {
+    font-size: 19px;
+  }
+
+  .home {
+    max-width: 900px;
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  .flex {
+    align-items: center;
+  }
+}
+
+
+
+
+
+/*                                      768px Media */
+
+
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+    padding-bottom: 0;
+  }
+
+  .container {
+    max-width: 700px;
+  }
+
+  .back-table {
+    max-width: 700px;
+    height: 300px;
+  }
+
+  .click-div {
+    width: 320px;
+    font-size: 8px;
+  }
+
+  .cont {
+    width: 320px;
+    height: 250px;
+    font-size: 8px;
+  }
+
+  .lTable {
+    height: 400px;
+    overflow: hidden;
+  }
+
+  .lTable img {
+    height: 300px;
+  }
+
+  .rTable {
+    height: 300px;
+  }
+
+  .constructor {
+    max-width: 700px;
+    font-size: 12px;
+  }
+
+  .rConst {
+    font-size: 8px;
+    padding: 5px;
+  }
+
+  .constructor {
+    height: 350px;
+  }
+
+  .variable {
+    width: 200px;
+    height: 150px;
+  }
+
+  .constProp input {
+    padding: 2px 2px;
+    width: 100px;
+    font-size: 9px;
+  }
+
+  .constProp p {
+    padding-bottom: 5px;
+    font-size: 11px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .rNav ul li a {
+    font-size: 15px;
+  }
+
+  .fName {
+    font-size: 16px;
+  }
+
+  .home {
+    max-width: 700px;
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .navigation-manual {
+    width: 650px;
+  }
+
+  .slidBody {
+    height: 650px;
+  }
+}
+
+/*                                      480px Media */
+
+@media (max-width:480px) {
+  .container {
+    max-width: 450px;
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  .lNav {
+    width: 30%;
+  }
+
+  .rNav {
+    width: 68%;
+  }
+
+  .logo {
+    font-size: 15px;
+  }
+
+  .rNav ul li a {
+    font-size: 13px;
+    font-weight: 50px;
+    padding: 5px;
+  }
+
+  .rNav {
+    padding: 5px;
+  }
+  .slider{
+    width: 450px;
+    height: 400px;
+  }
+  .slidBody {
+    height: 480px;
+  }
+  .slide img{
+    width: 450px;
+  }
+  .navigation-manual{
+    bottom: 120px;
+    width: 400px;
+  }
+  .manual-btn {
+    border: 1px solid white;
+    padding: 3px;
+  }
+
+  .back-table {
+    max-width: 450px;
+    height: 250px;
+  }
+
+  .click-div {
+    width: 170px;
+    font-size: 6px;
+  }
+  .rTable .click{
+    padding: 6px;
+    font-weight: normal;
+    border-radius: 8px 8px 0 0;
+  }
+  .cont {
+    width: 170px;
+    height: 180px;
+    font-size: 6px;
+    padding: 3px;
+  }
+
+  .lTable {
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+  }
+
+  .lTable img {
+    height: 180px;
+  }
+
+  .rTable {
+    height: 500px;
+  }
+
+  .constructor {
+    max-width: 450px;
+  }
+
+  .rConst {
+    padding: 5px;
+  }
+
+  .constructor {
+    height: 230px;
+  }
+
+  .variable {
+    width: 150px;
+    height: 100px;
+    font-size: 7px;
+  }
+
+  .constProp input {
+    padding: 2px 2px;
+    width: 50px;
+    font-size: 6px;
+  }
+
+  .constProp p {
+    padding-bottom: 2px;
+    font-size: 8px;
+  }
+
+  .home {
+    max-width: 450px;
+    font-size: 12px;
+    padding: 3px;
+  }
+
+  .fName {
+    top: 10px;
+    font-size: 9px;
+  }
+}
